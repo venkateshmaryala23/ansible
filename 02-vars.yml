@@ -27,6 +27,6 @@
   tasks:
     - name: Access URL from Task vars
       ansible.builtin.debug:
-      msg: URL = {{URL}}
+        msg: URL = {{URL}}
       vars:
         URL: task.example.com
