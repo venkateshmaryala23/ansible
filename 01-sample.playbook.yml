@@ -6,7 +6,7 @@
       msg: "Task1"
 
    - name: Print Task2
-      ansible.builtin.debug:
+     ansible.builtin.debug:
        msg: "Task2"
 
 - name: Play2
