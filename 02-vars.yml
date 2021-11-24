@@ -39,3 +39,10 @@
     - name: Access the URL from Inventory
       ansible.builtin.debug:
         msg: URL = {{URL}}
+
+- name: Demo on CLI variables
+  hosts: all
+  tasks:
+    -name: Access CLI Variable
+     ansible.buitlin.debug:
+        msg: URL = {{URL}}
