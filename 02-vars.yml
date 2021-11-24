@@ -46,3 +46,10 @@
     - name: Access CLI Variable
       ansible.builtin.debug:
         msg: URL = {{URL}}
+
+- name: Demo for prcedence
+  hosts: all
+  tasks:
+    - name: Print URL1
+      ansible.builtin.debug:
+
