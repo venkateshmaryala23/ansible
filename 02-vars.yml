@@ -63,7 +63,7 @@
 - name: Print facts
   hosts: all
   tasks:
-    -name: Print a fact
-     ansible.builtin.debug:
-       msg: "HOST OS = {{ansible_user_id}}"
+    - name: Print a fact
+      ansible.builtin.debug:
+        msg: "HOST OS = {{ansible_user_id}}"
 
