@@ -47,16 +47,23 @@
 #      ansible.builtin.debug:
 #        msg: URL = {{URL}}
 
-- name: Demo for prcedence
+#- name: Demo for prcedence
+#  hosts: all
+#  vars:
+#    URL1: play.example.com
+#  vars_files:
+#    - sample-vars.yml
+#  tasks:
+#    - name: Print URL1
+#      ansible.builtin.debug:
+#        msg: URL = {{URL1}}
+#      vars:
+#        URL1: task.example.com
+
+- name: Print facts
   hosts: all
-  vars:
-    URL1: play.example.com
-  vars_files:
-    - sample-vars.yml
   tasks:
-    - name: Print URL1
-      ansible.builtin.debug:
-        msg: URL = {{URL1}}
-      vars:
-        URL1: task.example.com
+    -name: Print a fact
+     ansible.builtin.debug:
+       msg: "HOST OS = {{ansible_user_id}}"
 
