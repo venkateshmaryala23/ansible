@@ -44,5 +44,5 @@
   hosts: all
   tasks:
     - name: Access CLI Variable
-      ansible.buitlin.debug:
+      ansible.builtin.debug:
         msg: URL = {{URL}}
