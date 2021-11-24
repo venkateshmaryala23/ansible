@@ -65,5 +65,5 @@
   tasks:
     - name: Print a fact
       ansible.builtin.debug:
-        msg: "ansible user id = {{ansible_user_id}}"
+        msg: "HOST OS = {{ansible_user_id}}"
 
