@@ -1,5 +1,6 @@
 - name: play1
   hosts: all
+  become:
   tasks:
    - name: Print Task1
      ansible.builtin.debug:
