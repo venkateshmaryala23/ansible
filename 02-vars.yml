@@ -30,3 +30,12 @@
         msg: URL = {{URL}}
       vars:
         URL: task.example.com
+
+## you can declare the variable on tasks, however the scope is only that task
+
+- name: Demo on invetory level variables
+  hosts: all
+  tasks:
+    -name: Access the URL from Inventory
+     ansible.builtin.debug:
+      msg: URL = {{URL}}
