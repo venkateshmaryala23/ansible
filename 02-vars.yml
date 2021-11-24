@@ -18,4 +18,4 @@
   tasks:
     - name: Access URL
       ansible.builtin.debug:
-      msg: URL = {{URL}}
+        msg: URL = {{URL}}
