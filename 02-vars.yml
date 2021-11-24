@@ -38,4 +38,4 @@
   tasks:
     -name: Access the URL from Inventory
      ansible.builtin.debug:
-      msg: URL = {{URL}}
+       msg: URL = {{URL}}
