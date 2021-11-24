@@ -71,6 +71,6 @@
 - name: run time variables
   hosts: all
   tasks:
-    -name: Get uptime command output
-     ansible.builtin.shell: uptime
+    - name: Get uptime command output
+      ansible.builtin.shell: uptime
 
