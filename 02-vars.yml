@@ -66,4 +66,11 @@
     - name: Print a fact
       ansible.builtin.debug:
         msg: "HOST OS = {{ansible_distribution}}"
+## General good practise we dont start our user variable with ansible.. because those are for system facts from ansible
+
+- name: run time variables
+  hosts: all
+  tasks:
+    -name: Get uptime command output
+     ansible.builtin.shell: uptime
 
