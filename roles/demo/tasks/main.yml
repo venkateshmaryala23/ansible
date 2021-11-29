@@ -1,4 +1,7 @@
 - name: print hello from role
   debug:
     msg: "Hello from role"
+- name: variable
+    debug:
+      msg: "URL = {{URL}}"
     
