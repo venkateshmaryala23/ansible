@@ -78,4 +78,7 @@
     - name: Print OUT
       ansible.builtin.debug:
         msg: "{{OUT.stdout}}"
+    - name: Set fact
+      ansible.builtin.set_fact:
+        OUTPUT_UPTIME: {{OUT.stdout}}
 
