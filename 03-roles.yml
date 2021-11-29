@@ -2,3 +2,8 @@
   hosts: all
   roles:
     - demo
+
+- name: Demo from shop disney
+  hosts: all
+  roles:
+    - Shop
