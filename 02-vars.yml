@@ -80,5 +80,5 @@
         msg: "{{OUT.stdout}}"
     - name: Set fact
       ansible.builtin.set_fact:
-        OUTPUT_UPTIME: {{OUT.stdout}}
+        OUTPUT_UPTIME: "{{OUT.stdout}}"
 
