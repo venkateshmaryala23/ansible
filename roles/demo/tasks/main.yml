@@ -3,5 +3,5 @@
     msg: "Hello from role"
 - name: variable
   debug:
-      msg: "{{URL}}"
+      msg: "My varialbe url is -- > {{URL}}"
     
