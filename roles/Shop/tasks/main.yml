@@ -1,0 +1,3 @@
+- name: print shop item
+  debug:
+    msg: "this item is from shop disney"
