@@ -1,3 +1,4 @@
-- name: Print Frontend
-  debug:
-    msg: I am from front end role
+- name: Install nginx
+  yum:
+    name: nginx
+    state: latest
