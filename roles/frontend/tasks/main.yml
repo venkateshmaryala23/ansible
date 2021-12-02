@@ -3,12 +3,6 @@
     name: nginx
     state: latest
 
-- name: Restart the nginx
-  ansible.builtin.service:
-    name: nginx
-    state: restarted
-    enabled: yes
-
 - name: Download code and extrack
   include_role:
     name: common
@@ -21,6 +15,18 @@
 
 - name: copy of the htdocs content
   ansible.builtin.copy:
-            src: /tmp/frontend-main/static/
-            dest: /usr/share/nginx/html/
-            remote_src: yes
+    src: /tmp/frontend-main/static/
+    dest: /usr/share/nginx/html/
+    remote_src: yes
+
+- name: copy Roboshop config file
+  ansible.builtin.copy:
+    src: roboshop.conf
+    dest: /etc/nginx/default.d/roboshop.conf
+
+- name: Restart the nginx
+  ansible.builtin.service:
+    name: nginx
+    state: restarted
+    enabled: yes
+
