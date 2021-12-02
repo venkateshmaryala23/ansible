@@ -19,8 +19,8 @@
     path: /usr/share/nginx/html
     state: absent
 
-- name: copy of the htdocs content
-  ansible.builtin.copy:
-            src: /tmp/frontend-main/static/*
-            dest: /usr/share/nginx/html/
-            remote_src: yes
+#- name: copy of the htdocs content
+#  ansible.builtin.copy:
+#            src: /tmp/frontend-main/static/*
+#            dest: /usr/share/nginx/html/
+#            remote_src: yes
